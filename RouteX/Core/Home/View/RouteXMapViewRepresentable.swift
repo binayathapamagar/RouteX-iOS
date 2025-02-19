@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct UberMapViewRepresentable: UIViewRepresentable {
+struct RouteXMapViewRepresentable: UIViewRepresentable {
     
     let mapView = MKMapView()
     let locationManager = LocationManager()
@@ -31,12 +31,12 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     
 }
 
-extension UberMapViewRepresentable {
+extension RouteXMapViewRepresentable {
     
     class MapCoordinator: NSObject, MKMapViewDelegate {
-        let parent: UberMapViewRepresentable
+        let parent: RouteXMapViewRepresentable
         
-        init(parent: UberMapViewRepresentable) {
+        init(parent: RouteXMapViewRepresentable) {
             self.parent = parent
             super.init()
         }
