@@ -21,7 +21,7 @@ struct LocationSearchActivationView: View {
             Spacer()
         }//HStack
         .frame(
-            width: (UIScreen.current?.bounds.width ?? 0.0) - 64,
+            width: (UIScreen.current?.bounds.width ?? 0.0) - 48,
             height: 50
         )
         .background(

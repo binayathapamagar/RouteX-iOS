@@ -13,8 +13,16 @@ struct HomeView: View {
             RouteXMapViewRepresentable()
                 .ignoresSafeArea()
             
-            LocationSearchActivationView()
-                .padding(.top, 16)//We can use 72 as well
+//            LocationSearchActivationView()
+//                .padding(.top, 72)
+//            
+//            MapViewActionButton()
+            
+            VStack(spacing: 16) {
+                MapViewActionButton()
+                
+                LocationSearchActivationView()
+            }//VStack
         }
     }
 }
